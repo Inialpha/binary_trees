@@ -1,7 +1,7 @@
 #ifndef BINARY_TREE
 #define BINARY_TREE
 
-
+#include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
 /**
