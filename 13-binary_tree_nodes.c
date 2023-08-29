@@ -3,6 +3,7 @@
 /**
  * binary_tree_nodes - measures the size of a binary tree
  * @tree: is a pointer to the root node of the tree to measure the size
+ * Return: numb|r of nodes with a child
  */
 
 size_t binary_tree_nodes(const binary_tree_t *tree)
