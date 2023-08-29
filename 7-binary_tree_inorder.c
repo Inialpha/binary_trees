@@ -2,15 +2,6 @@
 
 
 /**
- * print_num - Prints a number
- *
- * @n: Number to be printed
- */
-void print_num(int n)
-{
-	printf("%d\n", n);
-}
-/**
  * binary_tree_inorder - goes through a binary tree using in-order traversal
  * @tree: is a pointer to the root node of the tree to traverse
  * @func: is a pointer to a function to call for each node.
