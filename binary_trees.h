@@ -51,11 +51,32 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
 /*****************ADVANCED*****************/
 
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+		const binary_tree_t *second);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 int binary_tree_is_complete(const binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+
+
 void binary_tree_print(const binary_tree_t *tree);
+
+
+/**
+ * struct queue_s - queue struct
+ * @node: a binary_tree node
+ * @next: next node
+ */
+
+typedef struct queue_s
+{
+	binary_tree_t *node;
+	struct queue_s *next;
+} queue;
+
+queue *createnode(binary_tree_t *node);
+void free_queue(queue *head);
+void add_queue(binary_tree_t *node, queue *head, queue **tail);
+void pop(queue **head);
 
 #endif
