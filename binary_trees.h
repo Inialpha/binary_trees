@@ -2,7 +2,7 @@
 #define BINARY_TREE
 
 #include <stdio.h>
-#include <stddef.h>
+#include <unistd.h>
 #include <stdlib.h>
 /**
  * struct binary_tree_s - Binary tree node
@@ -60,7 +60,7 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 bst_t *array_to_bst(int *array, size_t size);
 bst_t *bst_insert(bst_t **tree, int value);
 bst_t *bst_search(const bst_t *tree, int value);
-
+avl_t *avl_insert(avl_t **tree, int value);
 
 
 void binary_tree_print(const binary_tree_t *tree);
